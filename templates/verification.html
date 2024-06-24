@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block title%}
+Verify Email
+{%endblock title%}
+{%block body %}
+<form class="login" method="post">
+    <div class="form-group">
+      <label for="verifyEmail">Verification Code</label>
+      <input type="number" class="form-control" id="verifyEmail" aria-describedby="verify" placeholder="Verify Email">
+      <small id="emailHelp" class="form-text text-muted">Enter the verification code send in email</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{%endblock body%}

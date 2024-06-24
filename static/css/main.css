@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+.login,.register{
+    background-color: azure;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 40px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login .form-control{
+
+}
+.tutionlist{
+    background-color: rgb(208, 253, 253);
+    width: fit-content;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.tutionlist table{
+    
+}
+.tutionlist th, .tutionlist td{
+    text-align: center;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+}
+.tutionlist tr{
+    height: 60px;
+}
