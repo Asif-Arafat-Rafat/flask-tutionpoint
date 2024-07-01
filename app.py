@@ -6,7 +6,7 @@ app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///tuitionpoint.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATION']=False
 
 db.init_app(app)
-
+#fuck github
 with app.app_context():
     db.create_all()
 
