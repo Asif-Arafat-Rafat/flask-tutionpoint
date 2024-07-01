@@ -1,7 +1,14 @@
 from flask import Flask,render_template,request,session,redirect
-
+from database import db,Tutors
 
 app= Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///tuitionpoint.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATION']=False
+
+db.init_app(app)
+
+with app.app_context():
+    db.create_all()
 
 carousal={
     'img1':"https://images.unsplash.com/photo-1577774438656-768f1e5d9ed6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
